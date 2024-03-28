@@ -1,0 +1,21 @@
+{
+    "name": "stanleysie/hk-filter",
+    "description": "Filter web page input data.",
+    "type": "library",
+    "require": {
+        "php": "^7.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Stanleysie\\HkFilter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Stanley Sie",
+            "email": "swookon@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
