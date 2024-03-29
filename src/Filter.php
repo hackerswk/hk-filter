@@ -64,19 +64,19 @@ class Filter
      * @return mixed The result of applying the filter function.
      * @throws Exception If the parameter is unsupported or if function arguments do not match.
      */
-    public function applyFunction($param, $mode = 0)
+    public function applyFunction($param, $arguments = [])
     {
         switch ($param) {
             case 'email':
-                return $this->callFunction('emailDataHandle', [$mode]);
+                return $this->callFunction('emailDataHandle', $arguments);
             case 'mobile':
-                return $this->callFunction('mobileDataHandle', [$mode]);
+                return $this->callFunction('mobileDataHandle', $arguments);
             case 'number':
-                return $this->callFunction('numberDataHandle', [$mode]);
+                return $this->callFunction('numberDataHandle', $arguments);
             case 'text':
-                return $this->callFunction('textDataHandle', [$mode]);
+                return $this->callFunction('textDataHandle', $arguments);
             case 'url':
-                return $this->callFunction('urlDataHandle', [$mode]);
+                return $this->callFunction('urlDataHandle', $argument);
             case 'html':
                 return $this->callFunction('fixedHtmlTags');
             default:
